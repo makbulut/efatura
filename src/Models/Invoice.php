@@ -129,7 +129,7 @@ class Invoice
 
     public function mapWithEnglishKeys($data)
     {
-        $this->uuid = isset($data["uuid"]) ? $data["uuid"] : Uuid::uuid1()->toString();
+        $this->uuid = isset($data["uuid"]) ? $data["uuid"] :";
         $this->documentNumber = isset($data["documentNumber"]) ? $data["documentNumber"] : "";
         $this->date = isset($data["date"]) ? $data["date"] : "";
         $this->time = isset($data["time"]) ? $data["time"] : "";
