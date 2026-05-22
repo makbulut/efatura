@@ -72,7 +72,7 @@ class Invoice
 
     public function mapWithTurkishKeys($data)
     {
-        $this->uuid = isset($data["faturaUuid"]) ? $data["faturaUuid"] : Uuid::uuid1()->toString();
+        $this->uuid = isset($data["faturaUuid"]) ? $data["faturaUuid"] : "";
         $this->documentNumber = isset($data["belgeNumarasi"]) ? $data["belgeNumarasi"] : "";
         $this->date = isset($data["faturaTarihi"]) ? $data["faturaTarihi"] : "";
         $this->time = isset($data["saat"]) ? $data["saat"] : "";
